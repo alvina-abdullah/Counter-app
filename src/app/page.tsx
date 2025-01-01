@@ -15,8 +15,8 @@ export default function Counter() {
 
   // Save the counter value to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem("counter", count);
-  }, [count]);
+    localStorage.setItem("counter", count.toString()); 
+  }, [count]);;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black ">
